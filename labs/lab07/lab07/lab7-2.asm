@@ -25,7 +25,7 @@ mov [B],eax ; запись преобразованного числа в 'B'
 mov ecx,[A] ; 'ecx = A'
 mov [max],ecx ; 'max = A'
 ; ---------- Сравниваем 'A' и 'С' (как символы)
-cmp ecx,[C] ; Сравниваем 'A' и 'С'
+cmp ecx ; Сравниваем 'A' и 'С'
 jg check_B ; если 'A>C', то переход на метку 'check_B',
 mov ecx,[C] ; иначе 'ecx = C'
 mov [max],ecx ; 'max = C'
