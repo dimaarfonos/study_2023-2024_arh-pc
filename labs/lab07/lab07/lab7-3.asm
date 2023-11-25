@@ -3,7 +3,7 @@ section .data
 msg1 db ' а = ',0h
 msg2 db ' b = ',0h
 msg3 db ' c = ',0h
-msg4 db "Наибольшее число: ",0h
+msg4 db "Наименьшее число: ",0h
 a dd '82'
 b dd '59'
 c dd '61'
@@ -42,7 +42,7 @@ mov ecx,[a] ;
 mov [max],ecx ;
 ;------------сравнивание чисел a c
 cmp ecx,[c]; if a>c
-jg check_b ; то перход на метку
+jl check_b ; то перход на метку
 mov ecx,[c] ;
 mov [max],ecx ;
 ;-------метка check_b
@@ -53,7 +53,7 @@ mov [max],eax ;
 ;------------
 mov ecx,[max] ;
 cmp ecx,[b] ;
-jg check_c ;
+jl check_c ;
 mov ecx,[b] ;
 mov [max],ecx ;
 ;-------------
