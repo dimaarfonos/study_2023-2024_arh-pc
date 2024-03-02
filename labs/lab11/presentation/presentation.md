@@ -17,7 +17,7 @@ babel-otherlangs: english
 ## Formatting pdf
 toc: false
 toc-title: Содержание
-slide_level: 2
+slide_level: 12
 aspectratio: 169
 section-titles: true
 theme: metropolis
